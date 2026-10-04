@@ -1,0 +1,25 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // chatId = uidA_uidB; solo sus participantes pueden acceder
+    function isMember(chatId) {
+      return request.auth != null && request.auth.uid in chatId.split('_');
+    }
+
+    match /users/{uid} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    match /chats/{chatId} {
+      allow read, create, update: if isMember(chatId);
+
+      match /messages/{messageId} {
+        allow read: if isMember(chatId);
+        allow create: if isMember(chatId)
+                      && request.resource.data.senderId == request.auth.uid;
+      }
+    }
+  }
+}
