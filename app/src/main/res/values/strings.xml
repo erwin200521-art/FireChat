@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">FireChat</string>
+    <string name="notification_channel_id">messages</string>
+    <string name="notification_channel_name">Mensajes</string>
+
+    <string name="login_title">Iniciar sesión</string>
+    <string name="register_title">Crear cuenta</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirm_password">Confirmar contraseña</string>
+    <string name="action_login">Entrar</string>
+    <string name="action_register">Registrarme</string>
+    <string name="go_register">¿No tienes cuenta? Regístrate</string>
+    <string name="go_login">¿Ya tienes cuenta? Inicia sesión</string>
+
+    <string name="users_title">Conversaciones</string>
+    <string name="users_empty">Aún no hay otros usuarios registrados</string>
+    <string name="action_logout">Cerrar sesión</string>
+
+    <string name="hint_message">Escribe un mensaje</string>
+    <string name="cd_attach">Adjuntar imagen</string>
+    <string name="cd_send">Enviar</string>
+    <string name="cd_image">Imagen del mensaje</string>
 </resources>

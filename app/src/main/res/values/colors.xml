@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FF1565C0</color>
+    <color name="primary_dark">#FF0D47A1</color>
+    <color name="on_primary">#FFFFFFFF</color>
+    <color name="bubble_sent">#FFDCEBFB</color>
+    <color name="bubble_received">#FFEDEDED</color>
+    <color name="text_secondary">#FF6B6B6B</color>
 </resources>
